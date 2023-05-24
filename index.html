@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="activity">Activity 8</h1>
+    <form method="post" action="" class="container">
+        <div class="row row1">
+            <div>
+                <label class="label" for="sn">Student Number:</label>
+                <input placeholder=" Minimum of 5 numbers and Maximum of 12 numbers" name="sn" id="sn" type="text"><br>
+                <label for="sn" class="error"></label><br>
+            </div>
+            <div>
+                <label class="label" for="name">Name:</label>
+                <input placeholder=" Minimum of 4 letters and Maximum of 20 letters" name="name" id="name"
+                    type="text"><br>
+                <label for="name" class="error"></label><br>
+            </div>
+            <div>
+                <label class="label" for="date">Birthdate:</label>
+                <input placeholder=" Date should be in the format: MM/DD/YYYY" name="date" id="date" type="text"><br>
+                <label for="date" class="error"></label><br>
+            </div>
+            <div>
+                <label class="space label">Year</label><br><br>
+                <input type="radio" id="first" name="year">
+                <label class="label thin" for="first">1st year</label><br>
+                <input type="radio" id="second" name="year">
+                <label class="label thin" for="second">2nd year</label><br>
+                <input type="radio" id="third" name="year">
+                <label class="label thin" for="third">3rd year</label><br>
+                <input type="radio" id="fourth" name="year">
+                <label class="label thin" for="fourth">4th year</label><br>
+                <input type="radio" id="fifth" name="year">
+                <label class="label thin" for="fifth">5th year</label><br><br>
+                <label for="year" class="error"></label>
+            </div>
+        </div>
+        <div class="row rowhr"></div>
+        <div class="row row2">
+            <div>
+                <label class="space label">Course</label><br><br>
+                <select name="course" id="course">
+                    <option value="0">Select</option>
+                    <option value="cs">Computer Science</option>
+                    <option value="it">Information Technology</option>
+                    <option value="cpe">Computer Engineer</option>
+                    <option value="is">Information System</option>
+                    <option value="se">Software Engineer</option>
+                    <option value="ce">Civil Engineer</option>
+                    <option value="me">Mechanical Engineer</option>
+                </select><br>
+                <label for="course" class="error"></label><br>
+            </div>
+            <div>
+                <label class="space label">Subjects</label><br><br>
+                <input type="checkbox" id="calculus" name="subjects">
+                <label class="label thin" for="calculus">Calculus</label><br>
+                <input type="checkbox" id="data" name="subjects">
+                <label class="label thin" for="data">Data Science</label><br>
+                <input type="checkbox" id="numerical" name="subjects">
+                <label class="label thin" for="numerical">Numerical Analysis</label><br>
+                <input type="checkbox" id="web" name="subjects">
+                <label class="label thin" for="web">Web Development</label><br>
+                <input type="checkbox" id="physics" name="subjects">
+                <label class="label thin" for="physics">Physics</label><br>
+                <input type="checkbox" id="digital" name="subjects">
+                <label class="label thin" for="digital">Logic Design</label><br>
+                <input type="checkbox" id="program" name="subjects">
+                <label class="label thin" for="program">Programming Language</label><br>
+                <input type="checkbox" id="ds" name="subjects">
+                <label class="label thin" for="ds">Data Structure</label><br><br>
+                <label for="subjects" class="error"></label><br>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
